@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+} 
+header {
+    background-color:#d1d4d9 ;
+}
+footer {
+    background-color:#d1d4d9 ;
+}
+
+/*change the colour of text of the heading*/
+.site-tittle {
+    color: #385e7a;
+}
+
+/*add a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour*/
+#photo1 {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/*add a background to the odd list items*/
+li:nth-child(odd) {background-color: darkgray; }
+
+/* remove links underline */
+a[href="index.html"] {
+    text-decoration: none; 
+    list-style: none; 
+    background-color: p#385e7a;
+    border-style: #082f4b;
+}
+
+/* remove links underline */
+a[href="notes.html"] {
+    text-decoration: none; 
+    list-style-type: none;
+    border-style: #082f4b;
+}
+
+/* mouse over link */
+a:hover {
+    background-color: #b8a99e;
+  }
