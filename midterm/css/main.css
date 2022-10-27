@@ -6,6 +6,15 @@
     background-color: #aad4cf;
  }
  
+.site-tittle {
+    
+    /* position properties */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+
  .wrapper {
     width: 1024px;
     margin: 0 auto;
