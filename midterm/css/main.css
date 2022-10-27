@@ -1,0 +1,13 @@
+ *{
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: #aad4cf;
+ }
+ 
+ .wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #d4e9e7;
+ }
