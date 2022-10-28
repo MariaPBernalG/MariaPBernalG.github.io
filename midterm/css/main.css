@@ -1,10 +1,18 @@
  *{
+   /* position properties */
     box-sizing: border-box;
  }
 
- body {
+body {
+   /* position properties */
     background-color: #aad4cf;
  }
+
+nav ul li {
+   /* position properties */
+   display: inline-block;
+   padding: 1rem;
+}
  
 .site-tittle {
     
@@ -15,8 +23,27 @@
     transform: translate(-40%, -50%);
 }
 
- .wrapper {
+.wrapper {
+   /* position properties */
     width: 1024px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 10px;
     background-color: #d4e9e7;
+ }
+
+.life > div {
+   float: left; 
+  
+   
+}
+
+#starfish1{
+   padding: 0%;
+}
+
+#starfish2{
+   /* position properties */
+   position: relative;
+   width: 165px;
+   height: 165px;
  }
