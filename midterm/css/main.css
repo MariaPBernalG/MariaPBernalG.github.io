@@ -31,19 +31,20 @@ nav ul li {
     background-color: #d4e9e7;
  }
 
-.life > div {
-   float: left; 
-  
-   
-}
-
 #starfish1{
    padding: 0%;
 }
 
 #starfish2{
-   /* position properties */
+   margin-right: 20px;
    position: relative;
    width: 165px;
    height: 165px;
- }
+   /* text wrap around image */
+   Float:left
+   
+   }
+
+.life info p{
+   text-align :justify;
+   
