@@ -64,5 +64,8 @@ a[href="#"] {
    text-decoration: none;
    list-style-type: none;
    color: black;
-   
+}
+
+footer>p{
+   text-align: end;
 }
