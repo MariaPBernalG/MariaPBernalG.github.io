@@ -37,6 +37,7 @@ div label{
    /* input styling */
    width: 940px;
    border: none;
+   height: 30px;
 }
 
 .textbox{
@@ -54,7 +55,7 @@ div label{
    /* box model properties */
    padding: 10px;
    border: 1px solid black;
-   margin: 20px; 
+   margin-left: 0%; 
 }
 
 .wrapper {
@@ -75,9 +76,8 @@ div label{
    width: 165px;
    height: 165px;
    /* text wrap around image */
-   Float:left
-   
-   }
+   Float:left;
+ }
 
 .life p{
    text-align :justify;
