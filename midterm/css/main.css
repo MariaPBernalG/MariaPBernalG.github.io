@@ -1,26 +1,33 @@
  *{
-   /* position properties */
+   /* wrapping properties */
     box-sizing: border-box;
  }
 
 body {
-   /* position properties */
+   /* backgroung properties */
     background-color: #aad4cf;
  }
 
 nav ul li {
-   /* position properties */
+   /* nav properties */
    display: inline-block;
    padding: 1rem;
 }
  
 .site-tittle {
     
-    /* position properties */
+    /* tittle properties */
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-40%, -50%);
+}
+
+.box{
+   /* box model properties */
+   padding: 10px;
+   border: 1px solid black;
+   margin: 20px; 
 }
 
 .wrapper {
@@ -47,4 +54,11 @@ nav ul li {
 
 .life info p{
    text-align :justify;
-   
+}
+
+   /* listing styling */
+a[href="#"] {
+   text-decoration: none;
+   list-style-type: none;
+   color: black;
+}
