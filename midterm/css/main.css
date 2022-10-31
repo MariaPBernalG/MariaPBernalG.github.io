@@ -1,6 +1,7 @@
  *{
    /* wrapping properties */
     box-sizing: border-box;
+    font-family: sans-serif;
  }
 
 body {
@@ -8,10 +9,12 @@ body {
     background-color: #aad4cf;
  }
 
+
 nav ul li {
    /* nav properties */
    display: inline-block;
    padding: 1rem;
+   top: 0%;
 }
  
 .site-tittle {
@@ -61,4 +64,5 @@ a[href="#"] {
    text-decoration: none;
    list-style-type: none;
    color: black;
+   
 }
