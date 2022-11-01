@@ -27,7 +27,15 @@ nav ul li {
    justify-content: center;
 }
 
-#navigation{
+#home{
+   /* creates nav borders */
+   height: 30px;
+   width: 50px;
+   border-right: 1px solid black;  
+   padding-right: 210px;
+}
+
+#story{
    /* creates nav borders */
    height: 30px;
    width: 50px;
@@ -45,7 +53,7 @@ div label{
     position: absolute;
     top: 25%;
     left: 40%;
-    transform: translate(-250, -500%);
+    transform: translate(-250, -500);
     color: white;
     font-size: 20px;
     font-weight: 20px;
@@ -75,7 +83,7 @@ div label{
    background-color: #d4e9e7;
    padding: 10pt;
    border: 1px solid black;
-   
+
 }
 
 .box{
@@ -120,6 +128,7 @@ a[href="#"] {
 
 footer>p{
    text-align: end;
+   padding-right: 40px;
 }
 
 
