@@ -1,7 +1,7 @@
  *{
    /* wrapping properties */
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
  }
 
 body {
@@ -9,11 +9,30 @@ body {
     background-color: #aad4cf;
  }
 
+h1{
+   font-size: 30px;
+}
+
+h3{
+   font-size: 50px;
+}
 
 nav ul li {
    /* nav properties */
    display: inline-block;
-   padding: 0.2px 125px;
+   padding: 0.2px 100px;
+   margin-top: 0%;
+   font-size: 25px;   
+   text-align: center;
+   justify-content: center;
+}
+
+#navigation{
+   /* creates nav borders */
+   height: 30px;
+   width: 50px;
+   border-right: 1px solid black;  
+   padding-right: 210px;
 }
 
 div label{
@@ -21,17 +40,22 @@ div label{
 }
  
 .site-tittle {
-    
+
     /* tittle properties */
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-40%, -50%);
+    top: 25%;
+    left: 40%;
+    transform: translate(-250, -500%);
     color: white;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 20px;
+    /* site tittle to the front */
     z-index: 2;
   
+}
+
+.img{
+  text-align: center;
 }
 
 .field{
@@ -50,6 +74,8 @@ div label{
 .btn{
    background-color: #d4e9e7;
    padding: 10pt;
+   border: 1px solid black;
+   
 }
 
 .box{
@@ -59,26 +85,23 @@ div label{
    width: 980px;
 }
 
-#starfish1{
-   position: relative;
-   width: 1024px;
-   margin: none;
-   padding: none;
-}
+
 .wrapper {
    /* position properties */
     width: 1024px;
     margin: auto;
     padding: 10px;
     background-color: #d4e9e7;
+    top: 0;
  }
 
 
 #starfish2{
    margin-right: 20px;
+   margin-bottom: 20px;
    position: relative;
-   width: 165px;
-   height: 165px;
+   width: 200px;
+   height: 200px;
    /* text wrap around image */
    Float:left;
  }
