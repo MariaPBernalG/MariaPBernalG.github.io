@@ -1,214 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Final Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--reset css here-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--google fonts here-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Final Project</title>
 </head>
+
+<!-- Body contains everything-->
+
 <body>
-    <div class="wrapper">
-        <!-- Logo-->
+  <!-- header contains two divs-->
+  <header>
+    <!-- first div, nav contains logo, ul/li, search bar/icon-->
+    <nav>
+      <ul class="wrapper mainnav">
         <img src="images/imgs-final-project/logo.png" alt="Stars Logo--">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </ul>
+    </nav>
 
-        <!-- Main Nav-->
-     <nav>
-        <ul class="mainnav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-     </nav>
-        <!-- Search Bar-->
-     <div class="search-container">
+    <!--second div contains tittle, connect button, all inside oppacity -->
+    <div class="banner" id="home">
+      <!--css background img -->
+      <div>
+        <h1>Welcome to Three Star Media</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quae provident maxime, explicabo at omnis! Sunt
+          quis quasi, ipsam sint porro eius minima adipisci aliquid magnam omnis nostrum tempore voluptates?</p>
+
+        <!-- Connect with us Button-->
         <form action="#">
-          <input type="text" placeholder="Search..." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-       </form>
-     </div>
+          <a href="#contact"><button type="button">Connect with us<i class='fa fa-caret-right'></i></button></a>
+        </form>
+      </div>
     </div>
+  </header>
 
-    <!-- Header-->
-    <header class="header">
-       
-        <div class="main-banner">
-            <img src="images/imgs-final-project/main-banner.jpg" alt="Office banner">
+
+  <!-- About Us - one wrapper div with tow divs inside -->
+  <main>
+    <div class="wrapper about-us" id="about-us">
+      <div>
+        <div>
+          <img src="images/imgs-final-project/about-us.jpg" alt="ping-pong table">
         </div>
-
-         <!-- All inside a grapper with opacity-->
-        <div class="wrapper-1">
-            <h1>Welcome to Three Star Media</h1>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quae provident maxime, explicabo at omnis! Sunt quis quasi, ipsam sint porro eius minima adipisci aliquid magnam omnis nostrum tempore voluptates?</p>
-
-         <!-- Connect with us Button-->
-         <form action="#">
-            <button type="button">Connect with us</button>
-         </form>
+        <div>
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident impedit quod alias praesentium
+            quasi
+            nesciunt, ratione vel dolor excepturi ipsum necessitatibus. Quo, voluptas possimus officiis placeat quaerat
+            soluta
+            nemo?</p>
+          <p>Deserunt nostrum maiores labore veritatis ipsa soluta aperiam, laboriosam dolores exercitationem magni in
+            provident voluptatem nemo nesciunt officiis voluptatum. Doloribus sint accusamus soluta. Asperiores
+            doloremque
+            architecto beatae blanditiis totam tempora?</p>
         </div>
-        
-
-    </header>
-
-    <!-- About Us -->
-    <div class="wrapper-2">
-        <img src="images/imgs-final-project/about-us.jpg" alt="ping-pong table">
-
-        <h2>About Us</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident impedit quod alias praesentium quasi nesciunt, ratione vel dolor excepturi ipsum necessitatibus. Quo, voluptas possimus officiis placeat quaerat soluta nemo?</p>
-        <p>Deserunt nostrum maiores labore veritatis ipsa soluta aperiam, laboriosam dolores exercitationem magni in provident voluptatem nemo nesciunt officiis voluptatum. Doloribus sint accusamus soluta. Asperiores doloremque architecto beatae blanditiis totam tempora?</p>
+      </div>
     </div>
 
     <!-- Our Services - ***style using grid (PenCode example)*** -->
-    <h2>Our Services</h2>
-
-    <div class="our-services">
-
+    <div class="wrapper our-services" id="services">
+      <!-- Div with all of the grid info-->
+      <div>
+        <div>
+          <h2>Our Services</h2>
+        </div>
         <!-- Digital Transformation Section -->
-      <div class="block">
-        <img src="images/imgs-final-project/digital.jpg" alt="computer and cellphone">
+        <div class="card digital">
+          <img src="images/imgs-final-project/digital.jpg" alt="computer and cellphone">
 
-        <h4>Digital Transformation</h4>
+          <h4>Digital Transformation</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores animi eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil! Accusamus, consequatur enim.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores
+            animi
+            eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil!
+            Accusamus, consequatur enim.</p>
 
-        <form action="#">
-            <button type="button">Digital Plans</button>
-         </form>
-      </div>
+          <form action="#">
+            <button type="button">Digital Plans <i class='fa fa-caret-right'></i></button>
+          </form>
+        </div>
 
-      <!-- Marketing Section -->
-      <div class="block">
-        <img src="images/imgs-final-project/marketing.jpg" alt="laptop">
+        <!-- Marketing Section -->
+        <div class="card marketing">
+          <img src="images/imgs-final-project/marketing.jpg" alt="laptop">
 
-        <h4>Marketing</h4>
+          <h4>Marketing</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores animi eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil! Accusamus, consequatur enim.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores
+            animi
+            eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil!
+            Accusamus, consequatur enim.</p>
 
-        <form action="#">
-            <button type="button">Marketing Plans</button>
-         </form>
-      </div>
+          <form action="#">
+            <button type="button">Marketing Plans <i class='fa fa-caret-right'></i></button>
+          </form>
+        </div>
 
-      <!-- Video Production Section -->
-      <div class="block">
-        <img src="images/imgs-final-project/video.jpg" alt="Youtube intro cellphone">
+        <!-- Video Production Section -->
+        <div class="card video">
+          <img src="images/imgs-final-project/video.jpg" alt="Youtube intro cellphone">
 
-        <h4>Video Production</h4>
+          <h4>Video Production</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores animi eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil! Accusamus, consequatur enim.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores
+            animi
+            eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil!
+            Accusamus, consequatur enim.</p>
 
-        <form action="#">
-            <button type="button">Video Plans</button>
-         </form>
-      </div>
-      
+          <form action="#">
+            <button type="button">Video Plans <i class='fa fa-caret-right'></i></button>
+          </form>
+        </div>
 
-      <!-- Web Develpment Section -->
-      <div class="block">
-        <img src="images/imgs-final-project/web.jpg" alt="App notebook pen">
+        <!-- Web Develpment Section -->
+        <div class="card web">
+          <img src="images/imgs-final-project/web.jpg" alt="App notebook pen">
 
-        <h4>Web Development</h4>
+          <h4>Web Development</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores animi eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil! Accusamus, consequatur enim.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores
+            animi
+            eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil!
+            Accusamus, consequatur enim.</p>
 
-        <form action="#">
-            <button type="button">Web Plans</button>
-         </form>
-      </div>
+          <form action="#">
+            <button type="button">Web Plans <i class='fa fa-caret-right'></i></button>
+          </form>
+        </div>
 
-      <!-- Print Section-->
-      <div class="block">
-        <img src="images/imgs-final-project/print.jpg" alt="Newspaper bins">
+        <!-- Print Section-->
+        <div class="card print">
+          <img src="images/imgs-final-project/print.jpg" alt="Newspaper bins">
 
-        <h4>Print</h4>
+          <h4>Print</h4>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores animi eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil! Accusamus, consequatur enim.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis repellat, vitae, asperiores
+            animi
+            eaque nobis, mollitia natus illo cumque nostrum dolorum assumenda laboriosam dolore reprehenderit nihil!
+            Accusamus, consequatur enim.</p>
 
-        <form action="#">
-            <button type="button">Print Plans</button>
-         </form>
+          <form action="#">
+            <button type="button">Print Plans <i class='fa fa-caret-right'></i></button>
+          </form>
+        </div>
       </div>
     </div>
 
     <!-- Our Vision **** 100% Width ****-->
-    <div class="wrapper-3">
-        <img src="images/imgs-final-project/vision.jpg" alt="paper boats">
-
+    <div class="wrapper our-vision">
+      <div>
+        <!--css background img -->
         <h2>Our Vision</h2>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi autem dicta facilis corrupti nesciunt dolorem illo, voluptate, fuga officia perspiciatis repellendus tempora. Nostrum laborum fuga, voluptatibus repellat molestiae molestias temporibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi autem dicta facilis corrupti nesciunt dolorem
+          illo, voluptate, fuga officia perspiciatis repellendus tempora. Nostrum laborum fuga, voluptatibus repellat
+          molestiae molestias temporibus?</p>
 
         <form action="#">
-            <button type="button">Leanr More</button>
-         </form>
+          <button type="button">Leanr More <i class='fa fa-caret-right'></i></button>
+        </form>
+      </div>
     </div>
 
     <!-- Our Team ***** Flexblocks (CodePen example) ***** -->
-    <h2>Our Team</h2>
-    <div class="block-team">
-      <div class="block">
-        <img src="images/imgs-final-project/john.jpg" alt="john's photo">
-      </div>
+    <div class="wrapper team" id="team">
+      <div>
+        <div>
+          <h2>Our Team</h2>
+        </div>
+        <div class="block">
+          <img src="images/imgs-final-project/john.jpg" alt="john's photo">
+        </div>
 
-      <div class="block">
-        <h3>John Doe</h3>
-        <h5>CEO and Co-owner</h5>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo quisquam fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis deserunt.</p>
-      </div>
-      
-      <div class="block">
-        <img src="images/imgs-final-project/bob.jpg" alt="Bob's photo">
-      </div>
+        <div class="block">
+          <h3>John Doe</h3>
+          <h5>CEO and Co-owner</h5>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
+            quisquam
+            fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis
+            deserunt.</p>
+        </div>
 
-      <div class="block">
-        <h3>Bob Rite</h3>
-        <h5>CFO and Co-owner</h5>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo quisquam fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis deserunt.</p>
+        <div class="block">
+          <img src="images/imgs-final-project/bob.jpg" alt="Bob's photo">
+        </div>
+
+        <div class="block">
+          <h3>Bob Rite</h3>
+          <h5>CFO and Co-owner</h5>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
+            quisquam
+            fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis
+            deserunt.</p>
+        </div>
       </div>
     </div>
 
     <!-- Contact Us -->
-    <article>
-         <h2>Send us a message</h2>   
-        <form action="#" method="get">
+    <div class="wrapper contact">
+      <div>
+        <div id="contact">
+          <h2>Contact Us</h2>
+        </div>
+        <article class="form">
+          <h2>Send us a message</h2>
+          <form action="#" method="get">
             <div>
-                <p><label for="name">Full Name</label></p>
-                <input type="text" class="field" id="name" name="fname">
+              <p><label for="name">Full Name</label></p>
+              <input type="text" class="field" id="name" name="fname">
             </div>
             <div>
-                <p><label for="email">Email</label></p>
-                <input type="text" class="field" id="email" name="email">
+              <p><label for="email">Email</label></p>
+              <input type="text" class="field" id="email" name="email">
             </div>
             <div>
-                <p><label for="message">Message</label></p>
-                <textarea id="message" class="textbox" name="message"></textarea>
+              <p><label for="message">Message</label></p>
+              <textarea id="message" class="textbox" name="message"></textarea>
             </div>
             <div>
-                <button type="submit" class="btn">SEND</button>
+              <button type="submit" class="btn">SEND</button>
             </div>
-        </form>
-    </article>  
-    
-    <!-- Embeded Location -->
-    <div>
-     <h2>Location</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717652.3475284999!2d-76.39292879999996!3d45.36234595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669129494502!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+          </form>
+        </article>
 
-    <p></p>
+        <!-- Embeded Location -->
+        <div class="location">
+          <h2>Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717652.3475284999!2d-76.39292879999996!3d45.36234595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669129494502!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-    <!-- Hours of Operation Table
-    Implement padding, border and background in CSS -->
-    <div>
-        <table>
-            <caption><h2>Hours of operation</h2></caption>
+        <!-- Hours of Operation Table
+     Implement padding, border and background in CSS -->
+        <div>
+          <table>
+            <caption>
+              <h2>Hours of operation</h2>
+            </caption>
             <thead>
               <tr>
                 <th>Days</th>
@@ -219,7 +270,7 @@
             <tbody>
               <tr>
                 <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>    
+                <td>9 AM - 6 PM</td>
               </tr>
               <tr>
                 <td>Saturday - Sunday</td>
@@ -227,11 +278,17 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
     </div>
+  </main>
 
-    <footer>
-        <p><small>&copy; Copyright Three Star Media, 2020.</small></p>
-        <p>All images are taken from Unsplash</p>
-    </footer>
+  <footer class="wrapper footer">
+    <div>
+      <p><small>&copy; Copyright Three Star Media, 2020.</small></p>
+      <p>All images are taken from Unsplash</p>
+    </div>
+  </footer>
 </body>
+
 </html>
