@@ -16,7 +16,7 @@ License: none (public domain)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pacifico&family=Poppins:ital,wght@0,400;1,400;1,700&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@ License: none (public domain)">
     <!-- first div, nav contains logo, ul/li, search bar/icon-->
     <nav>
       <ul class="wrapper mainnav">
-        <img src="images/imgs-final-project/logo.png" alt="Stars Logo--">
+        <img src="images/imgs-final-project/logo.png" alt="Stars Logo--" class="stars-logo">
         <li><a href="#home">Home</a></li>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#services">Services</a></li>
@@ -50,7 +50,7 @@ License: none (public domain)">
     <!--second div contains tittle, connect button, all inside oppacity -->
     <div class="banner" id="home">
       <!--css background img -->
-      <div>
+      <div class="opacity">
         <h1>Welcome to Three Star Media</h1>
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quae provident maxime, explicabo at omnis! Sunt
@@ -58,7 +58,8 @@ License: none (public domain)">
 
         <!-- Connect with us Button-->
         <form action="#">
-          <a href="#contact"><button type="button">Connect with us<i class='fa fa-caret-right'></i></button></a>
+          <a href="#contact"><button type="button">Connect with us <i class='fa fa-caret-right connect'
+                id="yellow"></i></button></a>
         </form>
       </div>
     </div>
@@ -106,7 +107,7 @@ License: none (public domain)">
             Accusamus, consequatur enim.</p>
 
           <form action="#">
-            <button type="button">Digital Plans <i class='fa fa-caret-right'></i></button>
+            <button type="button" class="grey">Digital Plans <i class='fa fa-caret-right'></i></button>
           </form>
         </div>
 
@@ -122,7 +123,7 @@ License: none (public domain)">
             Accusamus, consequatur enim.</p>
 
           <form action="#">
-            <button type="button">Marketing Plans <i class='fa fa-caret-right'></i></button>
+            <button type="button" class="grey">Marketing Plans <i class='fa fa-caret-right'></i></button>
           </form>
         </div>
 
@@ -138,7 +139,7 @@ License: none (public domain)">
             Accusamus, consequatur enim.</p>
 
           <form action="#">
-            <button type="button">Video Plans <i class='fa fa-caret-right'></i></button>
+            <button type="button" class="grey">Video Plans <i class='fa fa-caret-right'></i></button>
           </form>
         </div>
 
@@ -154,7 +155,7 @@ License: none (public domain)">
             Accusamus, consequatur enim.</p>
 
           <form action="#">
-            <button type="button">Web Plans <i class='fa fa-caret-right'></i></button>
+            <button type="button" class="grey">Web Plans <i class='fa fa-caret-right'></i></button>
           </form>
         </div>
 
@@ -170,7 +171,7 @@ License: none (public domain)">
             Accusamus, consequatur enim.</p>
 
           <form action="#">
-            <button type="button">Print Plans <i class='fa fa-caret-right'></i></button>
+            <button type="button" class="grey">Print Plans <i class='fa fa-caret-right'></i></button>
           </form>
         </div>
       </div>
@@ -178,7 +179,7 @@ License: none (public domain)">
 
     <!-- Our Vision **** 100% Width ****-->
     <div class="wrapper our-vision">
-      <div>
+      <div class="vision">
         <!--css background img -->
         <h2>Our Vision</h2>
 
@@ -187,7 +188,7 @@ License: none (public domain)">
           molestiae molestias temporibus?</p>
 
         <form action="#">
-          <button type="button">Leanr More <i class='fa fa-caret-right'></i></button>
+          <button type="button" class="learn-more">Leanr More <i class='fa fa-caret-right'></i></button>
         </form>
       </div>
     </div>
@@ -198,7 +199,7 @@ License: none (public domain)">
         <div>
           <h2>Our Team</h2>
         </div>
-        <div class="block">
+        <div class="john">
           <img src="images/imgs-final-project/john.jpg" alt="john's photo">
         </div>
 
@@ -206,13 +207,13 @@ License: none (public domain)">
           <h3>John Doe</h3>
           <h5>CEO and Co-owner</h5>
           <hr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
+          <p class="team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
             quisquam
             fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis
             deserunt.</p>
         </div>
 
-        <div class="block">
+        <div class="bob">
           <img src="images/imgs-final-project/bob.jpg" alt="Bob's photo">
         </div>
 
@@ -220,7 +221,7 @@ License: none (public domain)">
           <h3>Bob Rite</h3>
           <h5>CFO and Co-owner</h5>
           <hr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
+          <p class="team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus, rerum reiciendis hic explicabo
             quisquam
             fugit sapiente rem accusantium porro ratione magni, quas officia quaerat laborum modi soluta blanditiis
             deserunt.</p>
@@ -235,7 +236,7 @@ License: none (public domain)">
           <h2>Contact Us</h2>
         </div>
         <article class="form">
-          <h2>Send us a message</h2>
+          <h3>Send us a message</h3>
           <form action="#" method="get">
             <div>
               <p><label for="name">Full Name</label></p>
@@ -250,26 +251,17 @@ License: none (public domain)">
               <textarea id="message" class="textbox" name="message"></textarea>
             </div>
             <div>
-              <button type="submit" class="btn">SEND</button>
+              <button type="submit" class="btn">Send</button>
             </div>
           </form>
         </article>
-
-        <!-- Embeded Location -->
-        <div class="location">
-          <h2>Location</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717652.3475284999!2d-76.39292879999996!3d45.36234595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669129494502!5m2!1sen!2sca"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
         <!-- Hours of Operation Table
      Implement padding, border and background in CSS -->
         <div>
           <table>
             <caption>
-              <h2>Hours of operation</h2>
+              <h3>Hours of operation</h3>
             </caption>
             <thead>
               <tr>
@@ -290,14 +282,23 @@ License: none (public domain)">
             </tbody>
           </table>
         </div>
+
+        <!-- Embeded Location -->
+        <div class="location">
+          <h3>Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717652.3475284999!2d-76.39292879999996!3d45.36234595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669129494502!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="wrapper footer">
     <div>
-      <p><small>&copy; Copyright Three Star Media, 2020.</small></p>
-      <p>All images are taken from Unsplash</p>
+      <p><small>&copy; Copyright Three Star Media, 2020</small></p>
+      <p>All images are taken from <a href="#unsplash" class="unsplash">Unsplash</a></p>
     </div>
   </footer>
 </body>

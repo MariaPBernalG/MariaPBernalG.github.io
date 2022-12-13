@@ -2,14 +2,351 @@ body {
     font-family: 'Open Sans';
 }
 
-/*.wrapper {
+
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 10px 5px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 5px;
+}
+
+h4 {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.grey {
+    color: white;
+    background-color: #222;
+    border: none;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.learn-more {
+    color: white;
+    background-color: rgb(34, 34, 34, 0.6);
+    border: solid #c78c06;
+    border-width: 2px;
+    font-size: 25px;
+    padding: 30px;
+}
+
+button {
+    /*color: #222;*/
+    background-color: #c78c06;
+    border: none;
+    font-size: 25px;
+    padding: 30px;
+}
+
+
+.fa-search {
+    /*border: #c78c06;*/
+    border-width: 2px;
+    background-color: #222;
+    color: #c78c06;
+    padding: 5px;
+    position: relative;
+    float: right;
+    display: block;
+}
+
+.connect {
+    color: #222;
+    border: none;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.banner {
+    height: 760px;
     width: 100%;
     margin: auto;
-}*/
+    background-image: url("main-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: none;
+}
+
+.opacity {
+    /* tittle properties */
+    position: relative;
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    /* info to the front */
+    z-index: 2;
+    background-color: rgb(34, 34, 34, 0.6);
+    padding: 50px 40px 20px 20px;
+}
+
+.wrapper {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+.stars-logo {
+    width: 100px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.mainnav {
+    /* nav properties*/
+    padding: 0.2px 100px;
+    margin-top: 0%;
+    margin-bottom: 0;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #222;
+    background-size: 95%;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    /* nav properties */
+    display: inline-block;
+    padding: 3%;
+    margin-top: 0%;
+    font-size: 25px;   
+    text-align: center;
+    justify-content: left;
+    padding-top: 30px;
+    
+ }
+
+a:link {
+    text-decoration: none;
+    color: #c78c06;
+
+}
+
+a:hover {
+    color: #222;
+    background-color: #c78c06;
+    background-size: contain;
+    width: 760px;
+}
+
+a:visited {
+    color: #c78c06;
+}
+
+table {
+    width: 95%;
+    border: black;
+    border-collapse: collapse;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+th {
+    height: 50px;
+    text-align: center;
+    background-color: #ffe6ac;
+}
+
+td {
+    height: 50px;
+    padding-left: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    margin-left: 20px;
+}
+
+.search-container {
+    width: 200px;
+    float: right;
+    text-align: right;
+    height: 20px;
+}
+
+.search-container input[type=text] {
+    float: left;
+    /* padding: 6px;*/
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    width: 80%;
+}
+
+*/ .about-us {
+    background-color: #ffe6ac;
+    padding: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.digital {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.video {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.web {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.print {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.our-vision {
+    height: 440px;
+    width: 100%;
+    margin: auto;
+    background-image: url("vision.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: none;
+}
+
+.vision {
+    position: relative;
+    top: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+    /* info to the front */
+    z-index: 2;
+    padding: 50px 40px 20px 20px;
+}
+
+.block {
+    background-color: #ffe6ac;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    margin-top: noness;
+}
+
+.team {
+    font-size: 18px;
+}
+
+.bob {
+    margin-top: 20px;
+    margin-bottom: none;
+}
+
+.field {
+    width: 95%;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.textbox {
+    width: 95%;
+    height: 130px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    color: #c78c06;
+    background-color: #222;
+    border: none;
+    font-size: 25px;
+    padding: 3px;
+    margin-left: 20px;
+}
+
+.location iframe {
+    padding-left: 20px;
+    position: relative;
+    width: 95%;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #222;
+    color: #c78c06;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: large;
+}
+
+#unsplash {
+    text-decoration: underline;
+}
+
+hr {
+    width: 95%;
+    height: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #c78c06;
+    border: none;
+}
+
+img {
+    width: 100%;
+    padding: auto;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
 
 .search-container form {
     position: relative;
 }
+
 .search-container form button {
     position: absolute;
     right: 0;
@@ -29,12 +366,13 @@ table {
 }
 
 
-/*div {
+.card {
+    display: grid;
     grid-template-areas:
-     "digital digital digital marketing marketing marketing"
-     "digital digital digital marketing marketing marketing"
-     "video video web web print print"
-     "video video web web print print";
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print"
+        "video video web web print print";
 }
 
 .digital {
@@ -55,5 +393,345 @@ table {
 
 .print {
     grid-area: print;
-}*/
+}
 
+
+/*MOBILE*/
+@media screen and (max-width: 760px) {
+
+    h1 {
+        font-size: 80px;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-weight: bolder;
+        margin: 10px 5px;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-weight: bolder;
+        margin: 10px 5px;
+    }
+
+    h4 {
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+    h5 {
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 10px 5px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .grey {
+        color: white;
+        background-color: #222;
+        border: none;
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .learn-more {
+        color: white;
+        background-color: rgb(34, 34, 34, 0.6);
+        border: solid #c78c06;
+        border-width: 2px;
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    button {
+        /*color: #222;*/
+        background-color: #c78c06;
+        border: none;
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    /*button {
+        border: none;
+        color: none;
+        padding: none;
+        margin: none;
+    }*/
+
+    .fa-search {
+        /*border: #c78c06;*/
+        border-width: 2px;
+        background-color: #222;
+        color: #c78c06;
+        padding: 5px;
+    }
+
+    .connect {
+        color: #222;
+        border: none;
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .banner {
+        height: 760px;
+        width: 100%;
+        margin: auto;
+        background-image: url("main-banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: none;
+    }
+
+    .opacity {
+        /* tittle properties */
+        position: relative;
+        top: 10%;
+        color: white;
+        font-size: 20px;
+        font-weight: 20px;
+        /* info to the front */
+        z-index: 2;
+        background-color: rgb(34, 34, 34, 0.6);
+        padding: 50px 40px 20px 20px;
+    }
+
+    .wrapper {
+        text-align: left;
+        width: 100%;
+        margin: auto;
+    }
+
+    .stars-logo {
+        width: 100px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .mainnav {
+        /* nav properties */
+        display: inline-block;
+        padding: 0.2px 100px;
+        margin-top: 0%;
+        margin-bottom: 0;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        background-color: #222;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    li {
+        line-height: 3;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #c78c06;
+
+    }
+
+    a:hover {
+        color: #222;
+        background-color: #c78c06;
+        background-size: contain;
+        width: 760px;
+    }
+
+    a:visited {
+        color: #c78c06;
+    }
+
+    table {
+        width: 95%;
+        border: black;
+        border-collapse: collapse;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    th {
+        height: 50px;
+        text-align: center;
+        background-color: #ffe6ac;
+    }
+
+    td {
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid;
+
+        margin-left: 20px;
+    }
+
+    .search-container {
+        width: 760px;
+        float: none;
+        text-align: left;
+        height: 20px;
+    }
+
+    .search-container input[type=text] {
+        float: left;
+        /* padding: 6px;*/
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        width: 80%;
+    }
+
+    */ .about-us {
+        background-color: #ffe6ac;
+        padding: 20px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .digital {
+        background-color: #ffe6ac;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .marketing {
+        background-color: #ffe6ac;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .video {
+        background-color: #ffe6ac;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .web {
+        background-color: #ffe6ac;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .print {
+        background-color: #ffe6ac;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .our-vision {
+        height: 440px;
+        width: 100%;
+        margin: auto;
+        background-image: url("vision.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: none;
+    }
+
+    .vision {
+        position: relative;
+        top: 10%;
+        color: white;
+        font-size: 20px;
+        font-weight: 20px;
+        /* info to the front */
+        z-index: 2;
+        padding: 50px 40px 20px 20px;
+    }
+
+    .block {
+        background-color: #ffe6ac;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 70px;
+        margin-top: noness;
+    }
+
+    .team {
+        font-size: 18px;
+    }
+
+    .bob {
+        margin-top: 20px;
+        margin-bottom: none;
+    }
+
+    .field {
+        width: 95%;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    .textbox {
+        width: 95%;
+        height: 130px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        color: #c78c06;
+        background-color: #222;
+        border: none;
+        font-size: 25px;
+        padding: 3px;
+        margin-left: 20px;
+    }
+
+    .location iframe {
+        padding-left: 20px;
+        position: relative;
+        width: 95%;
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        background-color: #222;
+        color: #c78c06;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    #unsplash {
+        text-decoration: underline;
+    }
+
+    hr {
+        width: 95%;
+        height: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #c78c06;
+        border: none;
+    }
+
+    img {
+        width: 100%;
+        padding: auto;
+    }
+
+
+
+
+}

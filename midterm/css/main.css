@@ -35,14 +35,6 @@ nav ul li {
    padding-right: 210px;
 }
 
-#story{
-   /* creates nav borders */
-   height: 30px;
-   width: 50px;
-   border-right: 1px solid black;  
-   padding-right: 210px;
-}
-
 div label{
    clear: both;
 }
