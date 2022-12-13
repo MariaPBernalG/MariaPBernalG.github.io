@@ -41,6 +41,11 @@ p {
     text-align: left;
 }
 
+img {
+    width: 100%;
+    padding: auto;
+}
+
 .grey {
     color: white;
     background-color: #222;
@@ -207,7 +212,7 @@ td {
     width: 80%;
 }
 
-*/ .about-us {
+.about-us {
     background-color: #ffe6ac;
     padding: 20px;
     margin-bottom: 30px;
@@ -333,11 +338,6 @@ hr {
     border: none;
 }
 
-img {
-    width: 100%;
-    padding: auto;
-}
-
 .wrapper {
     width: 100%;
     margin: auto;
@@ -366,13 +366,31 @@ table {
 }
 
 
-.card {
+.our-services {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-        "digital digital digital marketing marketing marketing"
-        "digital digital digital marketing marketing marketing"
-        "video video web web print print"
-        "video video web web print print";
+        "one one one two two two"
+        "one one one two two two"
+        "three three four four five five"
+        "three three four four five five";
+}
+
+.our-services .card:nth-child(1){
+    grid-area: one; 
+}
+.our-services .card:nth-child(2){
+    grid-area: two;
+}
+.our-services .card:nth-child(3){
+    grid-area: three;
+}
+.our-services .card:nth-child(4){
+    grid-area: four;
+}
+.our-services .card:nth-child(5){
+    grid-area: five;
 }
 
 .digital {
