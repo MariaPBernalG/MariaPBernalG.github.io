@@ -1,32 +1,28 @@
-body {
-    font-family: 'Open Sans';
-}
-
-
+/*MOBILE*/
 h1 {
-    font-size: 80px;
+    font-size: 25pt;
     font-weight: bolder;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 20px;
     font-weight: bolder;
     margin: 10px 5px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 15px;
     font-weight: bolder;
-    margin: 10px 5px;
+    margin: 1 0px 5px;
 }
 
 h4 {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: 12pt;
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 10px;
     font-weight: bolder;
     margin: 10px 5px;
 }
@@ -37,13 +33,8 @@ h3,
 h4,
 h5,
 p {
-    padding-left: 20px;
+    padding-left: 5px;
     text-align: left;
-}
-
-img {
-    width: 100%;
-    padding: auto;
 }
 
 .grey {
@@ -51,7 +42,9 @@ img {
     background-color: #222;
     border: none;
     font-size: 25px;
-    padding: 30px;
+    padding: 10px;
+    width: 95%;
+
 }
 
 .learn-more {
@@ -67,8 +60,8 @@ button {
     /*color: #222;*/
     background-color: #c78c06;
     border: none;
-    font-size: 25px;
-    padding: 30px;
+    font-size: 8pt;
+    padding: 2px;
 }
 
 
@@ -78,21 +71,18 @@ button {
     background-color: #222;
     color: #c78c06;
     padding: 5px;
-    position: relative;
-    float: right;
-    display: block;
 }
 
 .connect {
     color: #222;
     border: none;
-    font-size: 25px;
-    padding: 30px;
+    font-size: 5px;
+    padding: auto;
 }
 
 .banner {
-    height: 760px;
-    width: 1200px;
+    height: 100%;
+    width: 100%;
     margin: auto;
     background-image: url("main-banner.jpg");
     background-size: cover;
@@ -105,8 +95,7 @@ button {
     position: relative;
     top: 10%;
     color: white;
-    font-size: 20px;
-    font-weight: 20px;
+    font-size: 10px;
     /* info to the front */
     z-index: 2;
     background-color: rgb(34, 34, 34, 0.6);
@@ -115,39 +104,28 @@ button {
 
 .wrapper {
     text-align: left;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
 }
 
 .stars-logo {
     width: 100px;
-    position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .mainnav {
-    /* nav properties*/
-    margin-top: 0%;
-    margin-bottom: 0;
-    font-size: 25px;
-    justify-content: center;
-    background-color: #222;
-    background-size: 95%;
-    list-style: none;
-    text-decoration: none;
-}
-
-nav ul li {
     /* nav properties */
     display: inline-block;
-    padding: 3%;
-    margin-top: 0%;
-    font-size: 25px;   
+    font-size: 25px;
     text-align: center;
-    justify-content: left;
-    padding-top: 30px;
-    
- }
+    justify-content: center;
+    background-color: #222;
+    list-style: none;
+}
+
+li {
+    line-height: 3;
+}
 
 a:link {
     text-decoration: none;
@@ -189,13 +167,14 @@ table,
 th,
 td {
     border: 1px solid;
+
     margin-left: 20px;
 }
 
 .search-container {
-    width: 200px;
-    float: right;
-    text-align: right;
+    width: 760px;
+    float: none;
+    text-align: left;
     height: 20px;
 }
 
@@ -269,7 +248,8 @@ td {
     padding: 50px 40px 20px 20px;
 }
 
-.block {
+.block1,
+.block2 {
     background-color: #ffe6ac;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -324,10 +304,6 @@ td {
     font-size: large;
 }
 
-#unsplash {
-    text-decoration: underline;
-}
-
 hr {
     width: 95%;
     height: 3px;
@@ -337,84 +313,17 @@ hr {
     border: none;
 }
 
-.wrapper {
+img {
     width: 100%;
-    margin: auto;
-}
-
-.search-container form {
-    position: relative;
-}
-
-.search-container form button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    background: transparent;
-    border: transparent;
-    font-size: 20px;
-    color: #4b00ff;
-    cursor: pointer;
-    outline: 0;
-}
-
-table {
-    border-collapse: collapse;
+    padding: auto;
 }
 
 
-.our-services {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-        "one one one two two two"
-        "one one one two two two"
-        "three three four four five five"
-        "three three four four five five";
-}
+@media screen and (min-width: 760px) {
+    body {
+        font-family: 'Open Sans';
+    }
 
-.our-services .card:nth-child(1){
-    grid-area: one; 
-}
-.our-services .card:nth-child(2){
-    grid-area: two;
-}
-.our-services .card:nth-child(3){
-    grid-area: three;
-}
-.our-services .card:nth-child(4){
-    grid-area: four;
-}
-.our-services .card:nth-child(5){
-    grid-area: five;
-}
-
-.digital {
-    grid-area: digital;
-}
-
-.marketing {
-    grid-area: marketing;
-}
-
-.video {
-    grid-area: video;
-}
-
-.web {
-    grid-area: web;
-}
-
-.print {
-    grid-area: print;
-}
-
-
-/*MOBILE*/
-@media screen and (max-width: 760px) {
 
     h1 {
         font-size: 80px;
@@ -435,7 +344,7 @@ table {
 
     h4 {
         font-weight: bolder;
-        font-size: xx-large;
+        font-size: 19pt;
     }
 
     h5 {
@@ -450,8 +359,13 @@ table {
     h4,
     h5,
     p {
-        padding-left: 20px;
+        padding-left: 10px;
         text-align: left;
+    }
+
+    img {
+        width: 100%;
+        padding: auto;
     }
 
     .grey {
@@ -479,12 +393,6 @@ table {
         padding: 30px;
     }
 
-    /*button {
-        border: none;
-        color: none;
-        padding: none;
-        margin: none;
-    }*/
 
     .fa-search {
         /*border: #c78c06;*/
@@ -492,6 +400,9 @@ table {
         background-color: #222;
         color: #c78c06;
         padding: 5px;
+        position: relative;
+        float: right;
+        display: block;
     }
 
     .connect {
@@ -503,7 +414,7 @@ table {
 
     .banner {
         height: 760px;
-        width: 100%;
+        width: 1200px;
         margin: auto;
         background-image: url("main-banner.jpg");
         background-size: cover;
@@ -525,33 +436,36 @@ table {
     }
 
     .wrapper {
-        text-align: left;
-        width: 100%;
+        text-align: center;
+        max-width: 1200px;
         margin: auto;
     }
 
     .stars-logo {
         width: 100px;
         position: relative;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .mainnav {
-        /* nav properties */
-        display: inline-block;
-        padding: 0.2px 100px;
-        margin-top: 0%;
-        margin-bottom: 0;
+        /* nav properties*/
         font-size: 25px;
-        text-align: center;
-        justify-content: center;
         background-color: #222;
+        background-size: 95%;
         list-style: none;
         text-decoration: none;
     }
 
-    li {
-        line-height: 3;
+    nav ul li {
+        /* nav properties */
+        display: inline-block;
+        padding: 3%;
+        margin-top: 0%;
+        font-size: 25px;
+        text-align: center;
+        justify-content: left;
+        padding-top: 10px;
+
     }
 
     a:link {
@@ -594,14 +508,13 @@ table {
     th,
     td {
         border: 1px solid;
-
         margin-left: 20px;
     }
 
     .search-container {
-        width: 760px;
-        float: none;
-        text-align: left;
+        width: 200px;
+        float: right;
+        text-align: right;
         height: 20px;
     }
 
@@ -617,7 +530,12 @@ table {
         width: 80%;
     }
 
-    */ .about-us {
+    .card {
+        margin: 10px;
+
+    }
+
+    .about-us {
         background-color: #ffe6ac;
         padding: 20px;
         margin-bottom: 30px;
@@ -626,32 +544,27 @@ table {
 
     .digital {
         background-color: #ffe6ac;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
     .marketing {
         background-color: #ffe6ac;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
     .video {
         background-color: #ffe6ac;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
     .web {
         background-color: #ffe6ac;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
     .print {
         background-color: #ffe6ac;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
     }
 
     .our-vision {
@@ -681,15 +594,6 @@ table {
         padding-bottom: 20px;
         margin-bottom: 70px;
         margin-top: noness;
-    }
-
-    .team {
-        font-size: 18px;
-    }
-
-    .bob {
-        margin-top: 20px;
-        margin-bottom: none;
     }
 
     .field {
@@ -724,14 +628,7 @@ table {
     .footer {
         background-color: #222;
         color: #c78c06;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 10px;
         font-size: large;
-    }
-
-    #unsplash {
-        text-decoration: underline;
     }
 
     hr {
@@ -743,12 +640,120 @@ table {
         border: none;
     }
 
-    img {
+    .wrapper {
         width: 100%;
-        padding: auto;
+        margin: auto;
     }
 
+    .search-container form {
+        position: relative;
+    }
 
+    .search-container form button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        background: transparent;
+        border: transparent;
+        font-size: 20px;
+        color: #4b00ff;
+        cursor: pointer;
+        outline: 0;
+    }
 
+    table {
+        border-collapse: collapse;
+    }
 
+    .digital {
+        grid-area: one;
+    }
+
+    .marketing {
+        grid-area: two;
+    }
+
+    .video {
+        grid-area: three;
+    }
+
+    .web {
+        grid-area: four;
+    }
+
+    .print {
+        grid-area: five;
+    }
+
+    .prueba {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "one one one two two two"
+            "three three four four five five";
+    }
+
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .team div {
+        margin: 0;
+        width: 100%;
+    }
+
+    .team img {
+        display: block;
+        height: 100%;
+    }
+
+    .john {
+        flex-basis: 50%;
+    }
+
+    .bob {
+        flex-basis: 50%;
+        order: 1;
+
+    }
+
+    .block1 {
+        flex-basis: 50%;
+        font-size: 10pt;
+    }
+
+    .block2 {
+        flex-basis: 50%;
+        font-size: 10pt;
+    }
+
+    .form {
+        grid-area: one;
+    }
+
+    .hours {
+        grid-area: two;
+     }
+
+    .location {
+        grid-area: three;
+     }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "one three"
+            "two two";
+    }
+
+    .context {
+        padding-top: 20px;
+    }
 }
