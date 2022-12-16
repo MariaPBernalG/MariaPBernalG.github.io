@@ -738,11 +738,11 @@ img {
 
     .hours {
         grid-area: two;
-     }
+    }
 
     .location {
         grid-area: three;
-     }
+    }
 
     .contact {
         display: grid;
